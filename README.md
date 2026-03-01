@@ -71,6 +71,7 @@ This ensures clean, reproducible training and deployment.
 
 ## 📦 Project Structure
 
+```
 telco-churn-prediction/
 │
 ├── data/
@@ -89,7 +90,7 @@ telco-churn-prediction/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 🚀 API Deployment
@@ -113,6 +114,7 @@ Send a POST request to:
 
 With JSON body like this:
 
+```json
 {
   "gender": "Female",
   "SeniorCitizen": 0,
@@ -134,15 +136,18 @@ With JSON body like this:
   "MonthlyCharges": 89.5,
   "TotalCharges": 1074.0
 }
+```
 
 # 📤 Output Example
 
 The API returns churn probability and prediction:
 
+```json
 {
   "probability": 0.87,
   "prediction": 1
 }
+```
 
 Where:
 
